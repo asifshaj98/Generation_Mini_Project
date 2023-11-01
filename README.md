@@ -1,4 +1,20 @@
 # Cafe-Order-application-Mini-Project :cake:
+
+## Table of Contents
+1. [Problem](#Problem)
+2. [Objective](#Objective)
+3. [Client's Requirement](#Clients-Requirement)
+4. [Current Features](#current-features)
+5. [File Structure](#file-structure)
+6. [Ensuring the project requirements are met](#ensuring-the-project-requirements-are-met)
+7. [Functionality Demo](#functionality-demo)
+8. [Testing](#testing)
+9. [Future Updates (Improvements)](#future-updatesimprovements-clock130)
+10. [What I enjoyed implementing](#what-i-enjoyed-implementing)
+11. [Dependencies](#dependencies)
+12. [Installation](#installation)
+13. [Timeline of the Project requirements](#timeline-of-the-project-requirements)
+
 ## Problem
 A client has recently opened a pop-up café strategically located in a bustling business district. This café is geared towards offering delectable, homemade lunches, and refreshments to the busy professionals in nearby offices. To efficiently manage their growing customer base and streamline operations, the client is seeking a proficient software application. This application should enable the café to seamlessly log and track orders, enhancing their operational efficiency and providing exceptional service to their clientele. Data engineers are crucial in designing and implementing a robust, data-centric solution that can handle the influx of orders and ensure a smooth operational workflow for the café.
 ## Objective
