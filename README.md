@@ -99,7 +99,7 @@ def update_order(connection):
 
 ## Testing:
 Testing code in a Cafe CLI application using frameworks like pytest and unittest is crucial for ensuring its reliability, functionality, and maintainability. These testing frameworks provide structured and systematic approaches to validate various components of the code. Testing helps uncover potential bugs, errors, or unexpected behavior in the codebase, allowing for timely and effective bug fixes. It also ensures that new features or modifications to existing ones don't inadvertently break the application. Moreover, through automated tests, developers can efficiently verify multiple functionalities, saving time and effort during development. Overall, testing with frameworks like pytest and unittest promotes confidence in the code's correctness and robustness, contributing to the delivery of a high-quality Cafe 
-#### Update 01/11/2023: Implementing CI/CD using Github Actions
+## Update 01/11/2023: Implementing CI/CD using Github Actions
 The provided YAML file is a configuration file for GitHub Actions, a tool for implementing Continuous Integration (CI) and Continuous Deployment (CD) in your software development project. In this specific case, it's designed for the mini cafe project described earlier, which aims to enhance the operational efficiency of a pop-up cafe by developing a software application to log and track customer orders.
 ```bash
 name: CI
