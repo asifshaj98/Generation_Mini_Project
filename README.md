@@ -99,8 +99,44 @@ def update_order(connection):
 
 ## Testing:
 Testing code in a Cafe CLI application using frameworks like pytest and unittest is crucial for ensuring its reliability, functionality, and maintainability. These testing frameworks provide structured and systematic approaches to validate various components of the code. Testing helps uncover potential bugs, errors, or unexpected behavior in the codebase, allowing for timely and effective bug fixes. It also ensures that new features or modifications to existing ones don't inadvertently break the application. Moreover, through automated tests, developers can efficiently verify multiple functionalities, saving time and effort during development. Overall, testing with frameworks like pytest and unittest promotes confidence in the code's correctness and robustness, contributing to the delivery of a high-quality Cafe 
+#### Update 01/11/2023: Implementing CI/CD using Github Actions
+The provided YAML file is a configuration file for GitHub Actions, a tool for implementing Continuous Integration (CI) and Continuous Deployment (CD) in your software development project. In this specific case, it's designed for the mini cafe project described earlier, which aims to enhance the operational efficiency of a pop-up cafe by developing a software application to log and track customer orders.
+```bash
+name: CI
+on:
+  push:
+  pull_request:
 
-This code tests if a function called update_courier in a cafe management system correctly updates courier information. It simulates user input for order number 5, new courier name "Patrick," and new phone number 12345678. The test checks if the courier with ID 5, name 'Patrick', and phone number 12345678 is not initially in the system, then it calls the update_courier function, and finally, it checks if the courier is now in the system after the update.
+jobs:
+  run-tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-versions: ["3.11"]  # Use the latest Python version
+
+    name: Test
+    runs-on: ${{matrix.os}}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v2  # Use a specific version to ensure the latest Python version is used
+        with:
+          python-version: ${{matrix.python-versions}}
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest
+```
+This YAML file configures GitHub Actions to automatically run tests on the project whenever there is a push to the repository or a pull request. This is an important aspect of CI/CD, as it helps ensure that any code changes do not introduce new bugs or issues and maintain the quality and reliability of the software application. For the mini cafe project, this CI process is crucial in ensuring that the software application designed for order logging and tracking works as expected, ultimately enhancing the operational efficiency and customer experience of the pop-up cafe.
+
 #### Testing updating Courier:
 ```python
 @patch("builtins.input", side_effect = ["5","Patrick", 12345678])
@@ -147,6 +183,7 @@ def test_delete_product(mock_input, setup_database):
     assert (5, "Milk", 2.0) not in cursor.execute(ALL_PRODUCTS)
     assert len(list(cursor.execute(ALL_PRODUCTS))) == 6
 ```
+
 ## Future Updates(improvements) :clock130:
 A modification I would implement to this program is to implement more error handling using try and except.This would dramatically reduce the chances of the program of terminating at crucial stages. Due to time constraints and the late addition of testing, I therefore avoided implementing this through out the program.
 ### Example:
