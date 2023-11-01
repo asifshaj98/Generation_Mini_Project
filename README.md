@@ -30,7 +30,11 @@ out-for-delivery, delivered.
 • I need to be sure my app has been tested and proven to work well.
 • I need to receive regular software updates.
 
-## Current Features
+## Features
+ SQL Database Connection
+
+    The application establishes a secure connection to an SQL database, allowing for the storage and retrieval of essential data, including products, couriers, and orders. This robust database connection enhances data persistence and retrieval, ensuring the reliability of the cafe management system.
+
 
     Manage the Products:
         -Show all the products
@@ -54,6 +58,14 @@ out-for-delivery, delivered.
         -Update Couriers details
         -Delete Couriers
         -Save couriers in csv format
+
+    Query Data for Analytical Purposes
+    The cafe management system allows users to query data for analytical purposes. This feature enables users to retrieve specific information from the database, facilitating data analysis and informed decision-making.
+
+    Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
+    
+    The cafe management system is integrated with a robust CI/CD pipeline powered by GitHub Actions. This CI/CD pipeline plays a pivotal role in ensuring the reliability and quality of the application, streamlining the development and deployment processes.    
+
         
 ## File Structure
 The project design was meticulously crafted based on the client's specific requirements. The file structure is organized to ensure modularity, maintainability, and ease of testing. The data directory holds essential data files and scripts to manage the project's database. The src directory contains the main application logic, encompassing database functions and other fundamental functionalities. The tests directory houses unit tests to validate the application's functionalities, promoting robustness and reliability. The app.py file is the entry point for the application, orchestrating the various components. The README.md file provides essential information and instructions for anyone interested in understanding and contributing to the project.
