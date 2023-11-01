@@ -31,9 +31,9 @@ out-for-delivery, delivered.
 • I need to receive regular software updates.
 
 ## Features
- SQL Database Connection
+SQL Database Connection
 
-    The application establishes a secure connection to an SQL database, allowing for the storage and retrieval of essential data, including products, couriers, and orders. This robust database connection enhances data persistence and retrieval, ensuring the reliability of the cafe management system.
+The application establishes a secure connection to an SQL database, allowing for the storage and retrieval of essential data, including products, couriers, and orders. This robust database connection enhances data persistence and retrieval, ensuring the reliability of the cafe management system.
 
 
     Manage the Products:
@@ -59,12 +59,12 @@ out-for-delivery, delivered.
         -Delete Couriers
         -Save couriers in csv format
 
-    Query Data for Analytical Purposes
-    The cafe management system allows users to query data for analytical purposes. This feature enables users to retrieve specific information from the database, facilitating data analysis and informed decision-making.
+Query Data for Analytical Purposes
+The cafe management system allows users to query data for analytical purposes. This feature enables users to retrieve specific information from the database, facilitating data analysis and informed decision-making.
 
-    Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
-    
-    The cafe management system is integrated with a robust CI/CD pipeline powered by GitHub Actions. This CI/CD pipeline plays a pivotal role in ensuring the reliability and quality of the application, streamlining the development and deployment processes.    
+Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
+
+The cafe management system is integrated with a robust CI/CD pipeline powered by GitHub Actions. This CI/CD pipeline plays a pivotal role in ensuring the reliability and quality of the application, streamlining the development and deployment processes.    
 
         
 ## File Structure
